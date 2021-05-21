@@ -7,40 +7,11 @@ This is .net 5 based WinForms project for peer to peer UDP based chat listner. C
 
 ## Dependencies
 
-In order to run the project please download .net 5 runtime redistributable from [here](https://dotnet.microsoft.com/download/dotnet/5.0/runtime/?utm_source=getdotnetcore&utm_medium=referral). After downloading, please install the runtime and navigate to **PeerToPeerChat\PeerToPeerChat\bin\Debug\net5.0-windows\** folder and directly run the executable file.
+In order to run the project please download .net 5 runtime redistributable from [here](https://dotnet.microsoft.com/download/dotnet/5.0/runtime/?utm_source=getdotnetcore&utm_medium=referral). After downloading, please install the runtime and navigate to PeerToPeerChat\PeerToPeerChat\bin\Debug\net5.0-windows\ folder and directly run the executable file.
 
 **Plus moe:** If you need to access the codebase or want fork it, then please download Visual Studio 2019 community edition and install it. Then please open the sln file.
 
 ## Basics
 
 If you open ChatForm.cs file, then you can see I have used **255.255.255.255** as broadcast address and a random port **54545**. This address is an universal broadcast address in same network, and UDP protocol throws/broadcast message throughout the same network. If one or more client is listning to the port in the same network, then they can get the message.
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Though we need to allow incoming and outgoing for the particular port in firewall. Plus if we need to transmit the message between different networks, then we need to allow port to route to public and need public (static) IP for all clients as well.
