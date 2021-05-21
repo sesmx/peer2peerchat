@@ -2,21 +2,14 @@
 
 This is .net 5 based WinForms project for peer to peer UDP based chat listner. Contains 2 forms:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Login form, which takes any text and uses this as username for later use.
+- Main chat form, which is the main peer to peer based chat engine.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Dependencies
 
-## Learning Laravel
+In order to run the project please download .net 5 runtime redistributable from [here](https://dotnet.microsoft.com/download/dotnet/5.0/runtime/?utm_source=getdotnetcore&utm_medium=referral). After downloading, please install the runtime and navigate to peer2peerchat/PeerToPeerChat/obj/Debug/net5.0-windows/ folder and directly run the executable file.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Plus moe: If you need to access the codebase or want fork it, then please download Visual Studio 2019 community edition and install it. Then please open the sln file.
 
 ## Laravel Sponsors
 
